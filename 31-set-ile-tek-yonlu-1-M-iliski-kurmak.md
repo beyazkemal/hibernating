@@ -13,3 +13,5 @@
   Bu sayede pet tablosunda owner_id diye bir kolon olacak ve ilişkiyi tutacak.
 
 - Bu collection tipli değişkenler hep interface ile tanımlanmalı. Concrete sınıflar ile değil. Hibernate hata verir.
+
+- one to many ilişkilerde assosication table kullanımı...

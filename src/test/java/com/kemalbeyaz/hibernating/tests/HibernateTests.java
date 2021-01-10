@@ -1,13 +1,11 @@
 package com.kemalbeyaz.hibernating.tests;
 
 import com.kemalbeyaz.hibernating.config.HibernateConfig;
-import com.kemalbeyaz.hibernating.config.HibernateIntegrator;
 import com.kemalbeyaz.model.Owner;
 import com.kemalbeyaz.model.OwnerId;
 import com.kemalbeyaz.model.Pet;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.hibernate.boot.Metadata;
 import org.junit.Test;
 
 /**
@@ -21,7 +19,6 @@ public class HibernateTests {
         Transaction tx = session.beginTransaction();
         tx.commit();
         session.close();
-        Metadata metadata = HibernateIntegrator.getMetadata();
         HibernateConfig.getSessionFactory().close();
     }
 
